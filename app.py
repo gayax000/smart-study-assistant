@@ -133,24 +133,34 @@ st.markdown(
     border: 1px solid var(--border) !important;
     border-radius: 12px !important;
 }
+html, body {
+    background: var(--bg) !important;
+}
+
 [data-testid="stChatInput"] textarea {
     background: var(--surface) !important;
-    border: 1px solid var(--border) !important;
+    border: none !important;
     color: var(--text) !important;
 }
-[data-testid="stBottom"],
-[data-testid="stBottomBlockContainer"],
-[data-testid="stChatInputContainer"],
-.stChatFloatingInputContainer {
+div[data-testid^="stBottom"],
+div[class*="stBottom"],
+div[data-testid*="ChatInput"],
+.stChatFloatingInputContainer,
+div:has(> [data-testid="stChatInput"]) {
     background: var(--bg) !important;
+    border-color: var(--border) !important;
+    box-shadow: none !important;
 }
 [data-testid="stChatInput"] {
     background: var(--surface) !important;
     border: 1px solid var(--border) !important;
     border-radius: 12px !important;
+    box-shadow: none !important;
 }
-[data-testid="stBottom"] > div {
-    border-top: 1px solid var(--border) !important;
+[data-testid="stChatInput"] > div {
+    background: var(--surface) !important;
+    border: none !important;
+    box-shadow: none !important;
 }
 
 .quiz-q-num {
