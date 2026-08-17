@@ -95,6 +95,14 @@ html, body {
     margin: 2.2rem 0 0.7rem 0;
 }
 
+.stTextArea textarea,
+[data-testid="stChatInput"] textarea,
+input {
+    color: #4b4a45 !important;
+    -webkit-text-fill-color: #4b4a45 !important;
+    caret-color: #4b4a45 !important;
+}
+
 .stTextArea textarea {
     background: var(--surface) !important;
     border: 1px solid var(--border) !important;
