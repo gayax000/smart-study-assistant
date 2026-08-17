@@ -38,6 +38,7 @@ st.markdown(
 @import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap');
 
 :root {
+    color-scheme: light;
     --bg: #faf8f3;
     --surface: #ffffff;
     --surface-2: #f3f0e7;
@@ -51,6 +52,10 @@ st.markdown(
     --error-bg: #fbeae8;
     --text: #201d18;
     --text-muted: #6b6860;
+}
+
+html, body {
+    color-scheme: light;
 }
 
 #MainMenu, footer, header, [data-testid="collapsedControl"] { visibility: hidden; height: 0; }
