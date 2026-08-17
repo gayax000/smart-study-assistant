@@ -97,10 +97,12 @@ html, body {
 
 .stTextArea textarea,
 [data-testid="stChatInput"] textarea,
-input {
-    color: #4b4a45 !important;
-    -webkit-text-fill-color: #4b4a45 !important;
-    caret-color: #4b4a45 !important;
+input,
+textarea {
+    background-color: #ffffff !important;
+    color: #201d18 !important;
+    -webkit-text-fill-color: #201d18 !important;
+    caret-color: #201d18 !important;
 }
 
 .stTextArea textarea {
