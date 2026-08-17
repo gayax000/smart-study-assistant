@@ -137,19 +137,16 @@ html, body {
     background: var(--bg) !important;
 }
 
+[data-testid*="ottom" i],
+[class*="ottom" i] {
+    background: var(--bg) !important;
+    box-shadow: none !important;
+}
+
 [data-testid="stChatInput"] textarea {
     background: var(--surface) !important;
     border: none !important;
     color: var(--text) !important;
-}
-div[data-testid^="stBottom"],
-div[class*="stBottom"],
-div[data-testid*="ChatInput"],
-.stChatFloatingInputContainer,
-div:has(> [data-testid="stChatInput"]) {
-    background: var(--bg) !important;
-    border-color: var(--border) !important;
-    box-shadow: none !important;
 }
 [data-testid="stChatInput"] {
     background: var(--surface) !important;
