@@ -138,6 +138,20 @@ st.markdown(
     border: 1px solid var(--border) !important;
     color: var(--text) !important;
 }
+[data-testid="stBottom"],
+[data-testid="stBottomBlockContainer"],
+[data-testid="stChatInputContainer"],
+.stChatFloatingInputContainer {
+    background: var(--bg) !important;
+}
+[data-testid="stChatInput"] {
+    background: var(--surface) !important;
+    border: 1px solid var(--border) !important;
+    border-radius: 12px !important;
+}
+[data-testid="stBottom"] > div {
+    border-top: 1px solid var(--border) !important;
+}
 
 .quiz-q-num {
     font-family: 'JetBrains Mono', monospace;
