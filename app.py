@@ -38,24 +38,25 @@ st.markdown(
 @import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap');
 
 :root {
-    --bg: #14141c;
-    --surface: #1e1e2a;
-    --surface-2: #262635;
-    --border: #33333f;
-    --accent: #e8a33d;
-    --accent-soft: #f3c274;
-    --success: #4ade80;
-    --success-bg: rgba(74, 222, 128, 0.12);
-    --error: #f87171;
-    --error-bg: rgba(248, 113, 113, 0.12);
-    --text: #f2efe9;
-    --text-muted: #9997ac;
+    --bg: #faf8f3;
+    --surface: #ffffff;
+    --surface-2: #f3f0e7;
+    --border: #e4e0d6;
+    --accent: #b87d2b;
+    --accent-soft: #8f5e1c;
+    --accent-tint: #f1e2c9;
+    --success: #1b8a5a;
+    --success-bg: #e7f5ee;
+    --error: #c0392b;
+    --error-bg: #fbeae8;
+    --text: #201d18;
+    --text-muted: #6b6860;
 }
 
 #MainMenu, footer, header, [data-testid="collapsedControl"] { visibility: hidden; height: 0; }
 
 .stApp {
-    background: radial-gradient(ellipse 900px 480px at 50% -8%, rgba(232,163,61,0.16), transparent 60%), var(--bg);
+    background: radial-gradient(ellipse 900px 420px at 50% -10%, rgba(184,125,43,0.10), transparent 60%), var(--bg);
     color: var(--text);
     font-family: 'Inter', sans-serif;
 }
@@ -102,7 +103,7 @@ st.markdown(
 }
 
 .stButton button {
-    background: var(--surface-2) !important;
+    background: var(--surface) !important;
     color: var(--text) !important;
     border: 1px solid var(--border) !important;
     border-radius: 8px !important;
@@ -116,11 +117,11 @@ st.markdown(
 
 .stButton button[kind="primary"] {
     background: var(--accent) !important;
-    color: #17130a !important;
+    color: #fffaf0 !important;
     border: none !important;
     font-weight: 600 !important;
 }
-.stButton button[kind="primary"]:hover { background: var(--accent-soft) !important; color: #17130a !important; }
+.stButton button[kind="primary"]:hover { background: var(--accent-soft) !important; color: #fffaf0 !important; }
 
 [data-testid="stVerticalBlockBorderWrapper"] {
     background: var(--surface) !important;
@@ -133,32 +134,6 @@ st.markdown(
     border: 1px solid var(--border) !important;
     border-radius: 12px !important;
 }
-html, body {
-    background: var(--bg) !important;
-}
-
-[data-testid*="ottom" i],
-[class*="ottom" i] {
-    background: var(--bg) !important;
-    box-shadow: none !important;
-}
-
-[data-testid="stChatInput"] textarea {
-    background: var(--surface) !important;
-    border: none !important;
-    color: var(--text) !important;
-}
-[data-testid="stChatInput"] {
-    background: var(--surface) !important;
-    border: 1px solid var(--border) !important;
-    border-radius: 12px !important;
-    box-shadow: none !important;
-}
-[data-testid="stChatInput"] > div {
-    background: var(--surface) !important;
-    border: none !important;
-    box-shadow: none !important;
-}
 
 .quiz-q-num {
     font-family: 'JetBrains Mono', monospace;
@@ -168,15 +143,15 @@ html, body {
 }
 .quiz-question { font-family: 'Fraunces', serif; font-size: 1.12rem; font-weight: 600; margin: 0.35rem 0 1rem 0; }
 .quiz-option { display: block; width: 100%; padding: 0.65rem 0.9rem; border-radius: 8px; border: 1px solid var(--border); margin-bottom: 0.5rem; font-size: 0.92rem; }
-.quiz-option.correct { background: var(--success-bg); border-color: var(--success); color: var(--success); }
-.quiz-option.incorrect { background: var(--error-bg); border-color: var(--error); color: var(--error); }
+.quiz-option.correct { background: var(--success-bg); border-color: var(--success); color: var(--success); font-weight: 600; }
+.quiz-option.incorrect { background: var(--error-bg); border-color: var(--error); color: var(--error); font-weight: 600; }
 .quiz-option.neutral { color: var(--text-muted); }
 .quiz-explanation { font-size: 0.85rem; color: var(--text-muted); margin-top: 0.5rem; padding-top: 0.5rem; border-top: 1px dashed var(--border); }
 
 .score-badge {
     display: inline-block;
     font-family: 'JetBrains Mono', monospace;
-    background: var(--surface-2);
+    background: var(--accent-tint);
     border: 1px solid var(--border);
     border-radius: 999px;
     padding: 0.32rem 0.9rem;
@@ -184,7 +159,7 @@ html, body {
     color: var(--accent-soft);
 }
 
-.footer-note { text-align: center; color: var(--text-muted); font-family: 'JetBrains Mono', monospace; font-size: 0.72rem; margin-top: 3rem; opacity: 0.6; }
+.footer-note { text-align: center; color: var(--text-muted); font-family: 'JetBrains Mono', monospace; font-size: 0.72rem; margin-top: 3rem; opacity: 0.7; }
 
 @media (max-width: 640px) { .hero-title { font-size: 1.9rem; } }
 </style>
